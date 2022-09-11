@@ -6,25 +6,192 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Сайт портфолио</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="60x60" href="images/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
 <body>
-    <div class="navbar">
+    <div class="navbar container">
         <img src="images/logo.svg" alt="Logo" />
         <nav class="navigation">
             <ul class="nav-list">
                 <li class="nav-item"><a href="#" class="nav-link active">Главная</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Проекты</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Обо мне</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Связаться</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Проекты</a></li>
+                <li class="nav-item"><a href="#about-me" class="nav-link">Обо мне</a></li>
+                <li class="nav-item"><a href="#feedback" class="nav-link">Связаться</a></li>
             </ul>
 
         </nav>
     </div>
+    <!-- ./navbar -->
+    <header class="header container">
+        <img src="images/Emodji.png" alt="Avatar" class="header-photo">
+        <!-- /.header-photo -->
+        <div class="header-text">
+            <strong class="header-strong">Привет 👋</strong>
+            <h1 class="header-heading">
+                <span class="header-primary">Я фронтенд-разработчик и веб-дизайнер</span><br>
+                Меня зовут Вадим и я делаю сайты для людей и компаний
+            </h1>
+            <div class="header-links">
+                <ul class="social-list">
+                    <li class="social-item"><a href="#" class="social-link"><img src="images/Icons/linkedin.svg"
+                                alt="linkedin" class="social-logo"></a>
+                    </li>
+                    <li class="social-item"><a href="#" class="social-link"><img src="images/Icons/twitter.svg"
+                                alt="twitter" class="social-logo"></a>
+                    </li>
+                    <li class="social-item"><a href="#" class="social-link"><img src="images/Icons/github.svg"
+                                alt="github" class="social-logo"></a>
+                    </li>
+                    <li class="social-item"><a href="#" class="social-link"><img src="images/Icons/stackoverflow.svg"
+                                alt="stackoverflow" class="social-logo"></a>
+                    </li>
+                    <li class="social-item"><a href="#" class="social-link"><img src="images/Icons/youtube.svg"
+                                alt="youtube" class="social-logo"></a>
+                    </li>
+                </ul>
+                <a href="#" class="cv-download" download>
+                    <img src="images/Icons/download.svg" alt="download-icon" class="cv-icon">
+                    <span class="cv-text">Скачать резюме</span>
+                </a>
+            </div>
+            <!-- /.header-links -->
+        </div>
+        <!-- /.header-text -->
+    </header>
+    <!-- /.header -->
+    <section id="projects" class="portfolio">
+        <div class="container">
+            <h2 class="section-heading">Последние проекты</h2>
+            <div class="cards">
+                <div class="card">
+                    <img src="images/Portfolio/image 01.jpg" alt="Мобильное приложение" class="card-image">
+                    <div class="card-text-wrapper">
+                        <h3 class="card-title">Мобильное приложение</h3>
+                        <ul class="tags">
+                            <li class="tags-item"><a href="#" class="tag">HTML</a></li>
+                            <li class="tags-item"><a href="#" class="tag">CSS</a></li>
+                            <li class="tags-item"><a href="#" class="tag">JavaScript</a></li>
+                            <li class="tags-item"><a href="#" class="tag">Git</a></li>
+                            <li class="tags-item"><a href="#" class="tag">ViteJS</a></li>
+                        </ul>
+                        <!-- /.card-title -->
+                        <p class="card-text">Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <!-- /.card-text -->
+                        <div class="card-buttons">
+                            <a href="#" class="card-button">
+                                <img src="images/Icons/code.svg" alt="code.icon" class="card-button-icon">
+                                <span class="card-button-text">Код</span>
+                            </a>
+                            <a href="#" class="card-button">
+                                <img src="images/icons/check.svg" alt="check.icon" class="card-button-icon">
+                                <span class="card-button-text">Демо</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <div class="card">
+                    <img src="images/Portfolio/image 02.jpg" alt="Одностраничный промо-сайт" class="card-image">
+                    <div class="card-text-wrapper">
+                        <h3 class="card-title">Одностраничный промо-сайт</h3>
+                        <ul class="tags">
+                            <li class="tags-item"><a href="#" class="tag">HTML</a></li>
+                            <li class="tags-item"><a href="#" class="tag">CSS</a></li>
+                        </ul>
+                        <!-- /.card-title -->
+                        <p class="card-text">Excepteur sint occaecat cupidatat non proident,
+                            sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <!-- /.card-text -->
+                        <div class="card-buttons">
+                            <a href="#" class="card-button">
+                                <img src="images/Icons/code.svg" alt="code.icon" class="card-button-icon">
+                                <span class="card-button-text">Код</span>
+                            </a>
+                            <a href="#" class="card-button">
+                                <img src="images/icons/check.svg" alt="check.icon" class="card-button-icon">
+                                <span class="card-button-text">Демо</span>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- /.card -->
+                </div>
+                <!-- /.cards -->
+
+            </div>
+            <!-- /.container -->
+    </section>
+    <!-- /.portfolio -->
+    <section id="about-me" class="developer container">
+        <img src="images/workplace.jpg" alt="Мое рабочее место" class="developer-photo">
+        <div class="developer-about">
+            <span class="developer-hello">Рад вас видеть</span>
+            <h2 class="developer-title">Жду ваших заказов</h2>
+            <p class="developer-text">Я разрабатываю сайты для людей и компаний.
+                Делаю всё сам: составляю прототип, дизайн-макет, пишу код.</p>
+            <span class="motto">Код, Дизайн, Обучение</span>
+            <p class="developer-text">Могу собрать страницу для вашей компании, даже если запускать её нужно уже завтра.
+                Из инструментов есть:Figma,HTML, CSS, JavaScript </p>
+            <img src="images/sign.png" alt="Подпись" class="developer-sign">
+        </div>
+    </section>
+    <!-- /.developer container -->
+    <section class="skills container">
+        <h2 class="sills-title">Работаю с разными языками и инструментами</h2>
+        <ul class="tags">
+            <li class="tags-item"><a href="#" class="tag">HTML</a></li>
+            <li class="tags-item"><a href="#" class="tag">CSS</a></li>
+            <li class="tags-item"><a href="#" class="tag">JavaScript</a></li>
+        </ul>
+    </section>
+    <!-- /.skills -->
+    <sectiom id="feedback" class="feedback container">
+        <h2 class="feedback-title">Готов обсудить проект...</h2>
+        <form action="#" class="form">
+            <div class="input-group">
+                <label for="userName" class="input-label">Имя</label>
+                <input id="userName" type="text" class="input">
+            </div>
+            <!-- /.input-group -->
+            <div class="input-group">
+                <label for="userEmail" class="input-label">Email</label>
+                <input id="userEmail" type="text" class="input">
+            </div>
+            <div class="input-group">
+                <label for="userMessage" class="input-label">Сообщение</label>
+                <textarea id="userMessage" cols="30" rows="30" class="input" textarea></textarea>
+            </div>
+            <div class="button-group">
+                <button type="submit" class="submit-button">
+                    <img src="images/Icons/send.svg" alt="send-icon" class="cv-icon">
+                    <span class="cv-text">Отправить</span>
+                </button>
+            </div>
+        </form>
+    </sectiom>
+    <!-- /.feedback -->
 </body>
 
 </html>
