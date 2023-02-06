@@ -23,13 +23,21 @@
         margin: 17px 154px 17px 22px;
     }
 }
+
 .leftside-block {
+    margin-top: 300px;
+}
+
+.rightside-block {
+    margin-top: 54px;
+    margin-left: 70px;
     width: 780px;
         height: 742px;
 }
 //
 .hello {
     display: flex;
+    justify-content: center;
     &__hi {
         color: #E5E9F0;
         font-weight: 450;
@@ -72,6 +80,25 @@
     &__colortext3{
         color: #E99287;
     }
+}
+
+//
+.main {
+    &__section {
+        display: flex;
+    }
+    &__folder {
+        color: $default-text;
+    }
+    &__contact {
+        color: $default-text;
+    }
+    // &__email {
+    //     color: $default-text;
+    // }
+    // &__phone {
+
+    // }
 }
 
 //
@@ -124,4 +151,5 @@
         width: 146px;
         height: 49px;
     }
+
 }

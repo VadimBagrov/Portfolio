@@ -101,12 +101,19 @@ body {
 }
 
 .leftside-block {
+  margin-top: 300px;
+}
+
+.rightside-block {
+  margin-top: 54px;
+  margin-left: 70px;
   width: 780px;
   height: 742px;
 }
 
 .hello {
   display: flex;
+  justify-content: center;
 }
 .hello__hi {
   color: #E5E9F0;
@@ -149,6 +156,16 @@ body {
 }
 .hello__colortext3 {
   color: #E99287;
+}
+
+.main__section {
+  display: flex;
+}
+.main__folder {
+  color: #607B96;
+}
+.main__contact {
+  color: #607B96;
 }
 
 .footer__items {
