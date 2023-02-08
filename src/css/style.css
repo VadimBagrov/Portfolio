@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   box-sizing: border-box;
 }
@@ -166,6 +167,33 @@ body {
 }
 .main__contact {
   color: #607B96;
+}
+
+.personal-info {
+  color: #607B96;
+}
+.personal-info__text {
+  display: inline;
+}
+.personal-info__close {
+  display: inline;
+}
+.personal-info__bottom-unit {
+  display: flex;
+}
+.personal-info__ol {
+  list-style-type: none;
+  /* Убираем исходные маркеры */
+  counter-reset: my-counter;
+  /* Задаём имя счетчика */
+}
+.personal-info__li::before {
+  content: counter(my-counter);
+  /* Выводим число с точкой */
+  counter-increment: my-counter;
+  /* Увеличиваем значение счётчика */
+  color: #607B96;
+  /* Цвет чисел */
 }
 
 .footer__items {

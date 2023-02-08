@@ -101,6 +101,33 @@
     // }
 }
 
+.personal-info {
+    color: $default-text;
+    &__text {
+        display: inline;
+    }
+    &__close {
+        display: inline;
+    }
+    &__bottom-unit {
+        display: flex;
+    }
+    &__ol {
+        list-style-type: none;
+        /* Убираем исходные маркеры */
+        counter-reset: my-counter;
+        /* Задаём имя счетчика */
+    }
+    &__li::before {
+        content: counter(my-counter);
+        /* Выводим число с точкой */
+        counter-increment: my-counter;
+        /* Увеличиваем значение счётчика */
+        color: $default-text;
+        /* Цвет чисел */
+    }
+}
+
 //
 .footer {
     &__items {
