@@ -93,6 +93,9 @@ body {
   line-height: 21px;
   margin: 17px 31px 17px 32px;
 }
+.header__title--active {
+  color: #FFFFFF;
+}
 .header__right {
   position: absolute;
   right: 0;
@@ -159,14 +162,60 @@ body {
   color: #E99287;
 }
 
+.main__leftside {
+  margin-left: 14px;
+  width: 243px;
+}
+.main__personal-nav {
+  padding-top: 10px;
+  margin-bottom: 18px;
+}
+.main__personal-info {
+  margin-bottom: 27px;
+}
+.main__personal-block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.main__personal-arrow {
+  margin-right: 11px;
+  width: 8px;
+  height: 6px;
+}
+.main__personal-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
 .main__section {
   display: flex;
 }
 .main__folder {
   color: #607B96;
 }
+.main__folder-color {
+  color: #FFFFFF;
+}
 .main__contact {
   color: #607B96;
+}
+.main__contacts-item {
+  display: flex;
+  align-items: center;
+}
+.main__contacts-img {
+  margin-right: 8px;
+  width: 16px;
+  height: 16px;
+}
+.main__list-item {
+  display: flex;
+  align-items: center;
+}
+.main__arrow {
+  margin-right: 11px;
 }
 
 .personal-info {
@@ -174,6 +223,7 @@ body {
 }
 .personal-info__text {
   display: inline;
+  margin-right: 49px;
 }
 .personal-info__close {
   display: inline;
@@ -187,7 +237,16 @@ body {
   counter-reset: my-counter;
   /* Задаём имя счетчика */
 }
+.personal-info__li {
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 150%;
+}
 .personal-info__li::before {
+  text-align: right;
+  display: inline-block;
+  width: 22px;
+  margin-right: 40px;
   content: counter(my-counter);
   /* Выводим число с точкой */
   counter-increment: my-counter;
@@ -195,9 +254,74 @@ body {
   color: #607B96;
   /* Цвет чисел */
 }
+.personal-info__block {
+  display: flex;
+  align-items: center;
+}
+.personal-info__top-unit {
+  margin-bottom: 18px;
+}
+
+.project__list {
+  display: flex;
+  justify-content: space-evenly;
+}
+.project__box {
+  display: inline-block;
+  width: 370px;
+  height: 314px;
+  background: #011221;
+  border: 1px solid #1E2D3D;
+  border-radius: 15px;
+}
+.project__title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  color: #5565E8;
+}
+.project__img {
+  margin-bottom: 24px;
+  width: 370px;
+  height: 145px;
+  box-sizing: border-box;
+}
+.project__p-text {
+  width: 304px;
+  height: 54px;
+  color: #607B96;
+  font-weight: 450;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 22px;
+  padding-left: 31px;
+}
+.project__button {
+  width: 129px;
+  height: 38px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 14px;
+  gap: 10px;
+  background: #1C2B3A;
+  border-radius: 8px;
+  border: 0;
+  margin-left: 31px;
+}
+.project__button-text {
+  width: 101px;
+  height: 18px;
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
 
 .footer__items {
   display: flex;
+  align-items: center;
 }
 .footer__item-find, .footer__item-github {
   display: flex;

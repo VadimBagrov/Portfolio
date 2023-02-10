@@ -15,6 +15,9 @@
         line-height: 21px;
         margin: 17px 31px  17px 32px;
     }
+    &__title--active {
+        color: #FFFFFF;
+    }
     &__right {
         position: absolute;
         right: 0;
@@ -84,27 +87,68 @@
 
 //
 .main {
+    &__leftside {
+        margin-left: 14px;
+        width: 243px;
+    }
+    &__personal-nav{
+        padding-top: 10px;
+        margin-bottom: 18px;
+    }
+    &__personal-info {
+        margin-bottom: 27px;
+    }
+    &__personal-block {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    &__personal-arrow {
+        margin-right: 11px;
+        width: 8px;
+        height: 6px;
+    }
+    &__personal-text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        color: #FFFFFF;
+    }
     &__section {
         display: flex;
     }
     &__folder {
         color: $default-text;
     }
+    &__folder-color {
+        color: #FFFFFF;
+    }
     &__contact {
         color: $default-text;
     }
-    // &__email {
-    //     color: $default-text;
-    // }
-    // &__phone {
-
-    // }
+    &__contacts-item {
+        display: flex;
+        align-items: center
+    }
+    &__contacts-img {
+        margin-right: 8px;
+        width: 16px;
+        height: 16px;
+    }
+    &__list-item {
+        display: flex;
+        align-items: center;
+    }
+    &__arrow {
+        margin-right: 11px;
+    }
 }
 
 .personal-info {
     color: $default-text;
     &__text {
         display: inline;
+        margin-right: 49px;
     }
     &__close {
         display: inline;
@@ -118,7 +162,16 @@
         counter-reset: my-counter;
         /* Задаём имя счетчика */
     }
+    &__li {
+        font-weight: 450;
+            font-size: 18px;
+            line-height: 150%;
+    }
     &__li::before {
+        text-align: right;
+        display: inline-block;
+        width: 22px;
+        margin-right: 40px;
         content: counter(my-counter);
         /* Выводим число с точкой */
         counter-increment: my-counter;
@@ -126,12 +179,80 @@
         color: $default-text;
         /* Цвет чисел */
     }
+    &__block {
+        display: flex;
+        align-items: center;
+    }
+    &__top-unit {
+        margin-bottom: 18px;
+    }
+}
+
+.project {
+    &__list {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    &__box {
+        display: inline-block;
+        width: 370px;
+        height: 314px;
+        background: #011221;
+        border: 1px solid #1E2D3D;
+        border-radius: 15px;
+    }
+    &__title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 21px;
+        color: $purple;
+    }
+    &__img {
+        margin-bottom: 24px;
+        width: 370px;
+        height: 145px;
+        box-sizing: border-box;
+    }
+    &__p-text {
+        width: 304px;
+        height: 54px;
+        color: $default-text;
+        font-weight: 450;
+        font-size: 18px;
+        line-height: 150%;
+        margin-bottom: 22px;
+        padding-left: 31px;
+    }
+    &__button {
+        width: 129px;
+        height: 38px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 10px 14px;
+        gap: 10px;
+        background: #1C2B3A;
+        border-radius: 8px;
+        border: 0;
+        margin-left: 31px;
+    }
+    &__button-text {
+        width: 101px;
+        height: 18px;
+        font-weight: 450;
+            font-size: 14px;
+            line-height: 18px;
+
+            color: #FFFFFF;
+    }
 }
 
 //
 .footer {
     &__items {
         display: flex;
+        align-items: center
     }
     &__item-find,
     &__item-github {
