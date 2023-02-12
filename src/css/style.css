@@ -63,6 +63,7 @@ body {
   font-family: "Fira Code", monospace;
   background-color: #011627;
   overflow-x: hidden;
+  overflow-y: hidden;
   min-width: 300px;
 }
 
@@ -86,12 +87,120 @@ body {
 .header__items {
   display: flex;
 }
+.header__items::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 912px;
+  width: 100%;
+  height: 1px;
+  background: #1E2D3D;
+}
 .header__title {
   color: #607B96;
   font-weight: 450;
   font-size: 16px;
   line-height: 21px;
   margin: 17px 31px 17px 32px;
+}
+.header__title--active-hello::before {
+  z-index: 6;
+  content: "";
+  position: absolute;
+  left: 303px;
+  bottom: 522px;
+  top: 55px;
+  width: 103px;
+  height: 3px;
+  background: #FEA55F;
+}
+.header__title--active-about::before {
+  z-index: 6;
+  content: "";
+  position: absolute;
+  left: 405px;
+  bottom: 575px;
+  top: 55px;
+  width: 161px;
+  height: 3px;
+  background: #FEA55F;
+}
+.header__project--active::after {
+  z-index: 6;
+  content: "";
+  position: absolute;
+  left: 566px;
+  bottom: 522px;
+  top: 55px;
+  width: 140px;
+  height: 3px;
+  background: #FEA55F;
+}
+.header__title--active::before {
+  z-index: 6;
+  content: "";
+  position: absolute;
+  left: 303px;
+  bottom: 522px;
+  top: 55px;
+  width: 103px;
+  height: 3px;
+  background: #FEA55F;
+}
+.header__title-hello::after {
+  content: "";
+  position: absolute;
+  left: 243px;
+  bottom: 531px;
+  top: -4px;
+  width: 121px;
+  height: 1px;
+  background: #1E2D3D;
+  transform: rotate(90deg);
+}
+.header__title-about::after {
+  content: "";
+  position: absolute;
+  left: 345px;
+  bottom: 531px;
+  top: -4px;
+  width: 121px;
+  height: 1px;
+  background: #1E2D3D;
+  transform: rotate(90deg);
+}
+.header__title-project::after {
+  content: "";
+  position: absolute;
+  left: 505px;
+  bottom: 531px;
+  top: -4px;
+  width: 121px;
+  height: 1px;
+  background: #1E2D3D;
+  transform: rotate(90deg);
+}
+.header__title-project::before {
+  content: "";
+  position: absolute;
+  left: 645px;
+  bottom: 531px;
+  top: -4px;
+  width: 121px;
+  height: 1px;
+  background: #1E2D3D;
+  transform: rotate(90deg);
+}
+.header__title-contact::before {
+  content: "";
+  position: absolute;
+  right: 103px;
+  bottom: 531px;
+  top: -4px;
+  width: 121px;
+  height: 1px;
+  background: #1E2D3D;
+  transform: rotate(90deg);
 }
 .header__title--active {
   color: #FFFFFF;
@@ -102,6 +211,20 @@ body {
 }
 .header__name {
   margin: 17px 154px 17px 22px;
+}
+.header__title-active {
+  color: #FFFFFF;
+}
+.header__title-active::after {
+  z-index: 6;
+  content: "";
+  position: absolute;
+  right: -1px;
+  bottom: 522px;
+  top: 55px;
+  width: 164px;
+  height: 3px;
+  background: #FEA55F;
 }
 
 .leftside-block {
@@ -323,6 +446,15 @@ body {
   display: flex;
   align-items: center;
 }
+.footer__items::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 46px;
+  width: 100%;
+  height: 1px;
+  background: #1E2D3D;
+}
 .footer__item-find, .footer__item-github {
   display: flex;
   align-items: center;
@@ -362,4 +494,48 @@ body {
 .footer__item-find {
   width: 146px;
   height: 49px;
+}
+.footer__link-text-line::before {
+  content: "";
+  position: absolute;
+  left: 85px;
+  bottom: 900px;
+  top: 63px;
+  width: 121px;
+  height: 1px;
+  background: #1E2D3D;
+  transform: rotate(90deg);
+}
+.footer__link-img-line::before {
+  content: "";
+  position: absolute;
+  left: 137px;
+  bottom: 900px;
+  top: 63px;
+  width: 121px;
+  height: 1px;
+  background: #1E2D3D;
+  transform: rotate(90deg);
+}
+.footer__link-images-line::before {
+  content: "";
+  position: absolute;
+  left: 190px;
+  bottom: 900px;
+  top: 63px;
+  width: 121px;
+  height: 1px;
+  background: #1E2D3D;
+  transform: rotate(90deg);
+}
+.footer__link-git-line::before {
+  content: "";
+  position: absolute;
+  right: 127px;
+  bottom: 900px;
+  top: 63px;
+  width: 121px;
+  height: 1px;
+  background: #1E2D3D;
+  transform: rotate(90deg);
 }/*# sourceMappingURL=style.css.map */
