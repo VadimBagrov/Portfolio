@@ -212,7 +212,7 @@
 .main {
     &__leftside {
         margin-left: 14px;
-        width: 243px;
+        width: 301px;
     }
     &__personal-nav{
         padding-top: 10px;
@@ -236,6 +236,25 @@
         font-size: 16px;
         line-height: 21px;
         color: #FFFFFF;
+    }
+    &__personal-text::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 873px;
+        width: 100%;
+        height: 1px;
+        background: $line;
+    }
+    &__personal-text::after {
+        content: "";
+        position: absolute;
+        right: 531px;
+        bottom: 873px;
+        width: 100%;
+        height: 1px;
+        background: $line;
+        transform: rotate(90deg);
     }
     &__section {
         display: flex;
@@ -272,6 +291,17 @@
     &__text {
         display: inline;
         margin-right: 49px;
+    }
+    &__text::after {
+        content: "";
+        position: absolute;
+        left: 510px;
+        bottom: 564px;
+        top: 76px;
+        width: 39px;
+        height: 1px;
+        background: $line;
+        transform: rotate(90deg);
     }
     &__close {
         display: inline;
